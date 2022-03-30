@@ -1,0 +1,628 @@
+*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+}
+html {
+    font-size : 14px;
+}
+body {
+    width : 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.container {
+    max-width : 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding : 2.57rem 0;
+}
+a {
+    text-decoration : none ;
+    color : white ;
+}
+
+.logo-text {
+    color : white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+.logo-text .car-logo {
+    padding : 3px 6px;
+    margin-left: 6px;
+    background-color: #4A90E2;
+    border-radius : 3px;
+}
+
+.nav-list {
+    list-style-type : none ;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-list .nav-item .nav-item-link{
+    
+    font-size : 1rem;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list .nav-item {
+    padding-right : 3em;
+}
+
+.nav-list .nav-item:last-child{
+    padding: 0;
+}
+
+.search-icon{
+    color : white ;
+}
+
+.hero {
+    padding-top : 2.14rem;
+    width : 100%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap : 2.14rem;
+
+}
+
+.hero .row-span-2 {
+    grid-row: 1 / 3;
+}
+
+.hero .hero-item {
+    position: relative;
+    border-radius: .5rem ;
+    overflow: hidden;
+}
+
+.hero .hero-detail {
+    position: absolute;
+    width : 100%;
+    top :0;
+    height : 100%;
+}
+
+.hero .hero-detail {
+    color : white ;
+}
+
+.hero .hero-category {
+    position: absolute;
+    background-color: #4A90E2;
+    font-size : 1.16rem;
+    top : 30px;
+    left : 20px;
+    line-height: 1.142rem;
+    padding : 4px 12px;
+    border-radius : 3px;
+
+}
+
+.hero .hero-content {
+    position: absolute;
+    bottom : 0;
+    padding : 70px 20px 23px 20px;
+    background: linear-gradient(to top , rgba(0, 0, 0, 1) , rgba(0, 0, 0, 0.0001));
+}
+
+.hero-content .hero-time {
+    line-height: 18px;
+    margin-bottom : 6px;
+}
+
+.hero-content .hero-text {
+    font-weight : bold;
+    line-height : 36px;
+    font-size : 26px;
+}
+
+main {
+    padding-top : 80px;
+}
+
+main .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posts{
+    width : 65.81%;
+    float: left;
+}
+
+.post{
+    position : relative;
+    margin-bottom :60px;
+}
+
+.post:last-child{
+    margin-bottom : 0;
+}
+
+
+
+.post .post-img {
+    position: relative;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+.post .post-content {
+    margin-left : 20px;
+    margin-right : 20px;
+    margin-top: -129px;
+    background-color: white ;
+    padding : 30px;
+    border-radius : 5px;
+    box-shadow: 0px 1px 5px 2px rgba(94 ,90 ,90 , 22%);
+}
+
+.post-content .post-category {
+    background-color: #4A90E2;
+    color : white ;
+    line-height: 16px;
+    font-size  :12px;
+    padding : 4px 12px;
+    border-radius : 3px;
+}
+
+.post-content .post-title{
+    font-weight : bold;
+    font-size : 25px;
+    line-height: 28px;
+    margin-top : 20px;
+    margin-bottom : 15px;
+}
+
+.post-content .post-date  {
+    font-size: 1rem;
+    font-style: italic;
+    color : rgba(102, 102, 102, 1);
+    margin-bottom : 15px;
+    display: block;
+}
+
+.post-content .post-text {
+    color : rgba(102, 102, 102, 1);
+    line-height: 24px;
+    max-width: 614px;
+}
+
+aside {
+    width: 23.07%;
+}
+
+.widget{
+    width : 100%;
+}
+
+.widget-content .widget-title {
+    color : rgba(23, 23, 23, 1);
+    line-height: 23px;
+    font-weight : bold;
+    font-size : 18px;
+    margin-top : 20px;
+}
+
+.widget-content .widget-category {
+    color : rgba(153, 153, 153, 1);
+    font-style : italic;
+    line-height : 18px;
+    font-size : 14px;
+    margin-top : 8px;
+    display: block;
+}
+
+.widget-content  .widget-text {
+    color : rgba(102, 102, 102, 1);
+    line-height : 25px;
+    font-size : 15px;
+    margin-top : 14px;
+}
+
+.btn {
+    color : white ;
+    line-height : 18px;
+    font-size : 14px;
+    font-weight: bold;
+    padding : 17px;
+    background-color: rgba(35, 35, 35, 1);
+    border-radius : 3px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    outline : none;
+    border : none;
+    cursor : pointer;
+}
+
+
+.widget-content .btn {
+    margin-top : 20px;
+    display: block;
+
+}
+
+.popular-posts {
+    margin-top : 60px;
+}
+.popular-posts .popular-posts-title {
+    color : rgba(23, 23, 23, 1);
+    line-height : 23px;
+    font-size : 18px;
+    font-weight: bold;
+    margin-bottom : 23px;
+}
+
+.p-post {
+    position: relative;
+}
+.p-post .p-post-category {
+    color : white;
+    display: block;
+    background-color: #4A90E2;
+    position: absolute;
+    top : 20px;
+    left : 20px;
+    padding : 4px 12px;
+    border-radius : 3px;
+
+}
+
+.p-post .p-post-img {
+    border-radius : 6px; 
+}
+.p-post .p-post-name {
+    color : rgba(23, 23, 23, 1);
+    font-size : 20px;
+    line-height : 28px;
+    font-weight : bold;
+    margin-top : 20px;
+}
+
+.p-post .p-post-date {
+    color : rgba(102, 102, 102, 1);
+    font-style : italic;
+    line-height : 18px;
+    font-size : 14px;
+    display: block;
+    margin-top : 10px;
+}
+.p-post{
+    margin-bottom : 40px;
+}
+
+.p-post:last-child{
+    margin-bottom : 0;
+}
+
+.insta{
+    margin-top : 60px;
+    width: 100%;
+}
+.insta .insta-title {
+    color : rgba(23, 23, 23, 1);
+    line-height : 23px;
+    font-size : 18px;
+    font-weight: bold;
+    margin-bottom : 23px;
+}
+
+.insta .insta-imgs {
+    width: 100%;
+    display: grid;
+    gap : 10px;
+    grid-template-columns: repeat(2 , 1fr);
+    margin-bottom : 10px;
+}
+
+.insta-icon{
+    color: white ;
+    font-size : 16px;
+}
+
+.tags {
+    margin-top : 60px;
+    width: 100%;
+}
+
+.tags .tags-title {
+    color : rgba(23, 23, 23, 1);
+    line-height : 23px;
+    font-size : 18px;
+    font-weight: bold;
+    margin-bottom : 23px;
+}
+
+.tag-list {
+    width  : 100%;
+    display: flex;
+    flex-wrap : wrap;
+    gap : 10px;
+}
+
+.tag-list .tag-item {
+    color : rgba(23, 23, 23, 1);
+    font-size: 14px;
+    line-height : 18px;
+    padding : 7px 16px;
+    border-radius : 3px;
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.newsletter {
+    margin-top : 60px;
+    width: 100%;
+}
+
+.newsletter .newslettre-title {
+    color : rgba(23, 23, 23, 1);
+    line-height : 23px;
+    font-size : 18px;
+    font-weight: bold;
+    margin-bottom : 23px;
+}
+
+.newsletter .newsletter-description {
+    color : rgba(102, 102, 102, 1);
+    font-size : 14px;
+    line-height : 24px;
+    margin-bottom : 27px;
+
+}
+
+.newsletter input[type="text"] {
+    color : rgba(174, 179, 187, 1);
+    font-size : 14px;
+    line-height : 18px;
+    padding: 17px;
+    border-radius : 3px;
+    border : 1px solid rgb(35 35 35 / 9%);
+    width : 100%;
+    margin-bottom : 10px;
+    outline : none;
+}
+
+.pagination-items .pagination-item {
+    color : rgba(23, 23, 23, 1);
+    line-height : 16px;
+    font-size: 16px;
+    padding : 10px 12px;
+    border-radius : 3px;
+    border : 1px solid rgb(35 35 35 / 9%);
+    margin-right : 10px;
+    display: inline-block;
+}
+.pagination-items .pagination-item.active {
+    background-color: rgba(0, 0, 0, 1);
+    color : white ;
+}
+
+.pagination-items .pagination-item:last-child {
+    margin-right : 0;
+}
+
+.mp {
+    width : 100%;
+    padding-top : 60px;
+}
+
+.mp .mp-item {
+    position: relative;
+}
+
+.mp .mp-title {
+    color : rgba(23, 23, 23, 1);
+    line-height : 39px;
+    font-size : 30px;
+    font-weight: bold;
+    margin-bottom : 27px;
+}
+
+.mp-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 30px;
+}
+
+.mp-item .mp-category {
+    position: absolute;
+    color : white ;
+    border-radius : 3px;
+    padding : 4px 18px;
+    top : 20px;
+    left : 20px;
+    font-size : 12px;
+    line-height  : 16px;
+    background-color: #4A90E2;
+}
+
+.mp .mp-title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight : bold; 
+    margin : 20px 0 10px 0;
+    color : rgba(23, 23, 23, 1);
+
+}
+
+.mp .mp-date {
+    color:  rgba(102, 102, 102, 1);
+    font-style : italic ;
+    font-weight : 14px;
+    line-height : 18px;
+
+}
+
+footer {
+    background-color: rgba(23, 23, 23, 1);
+    padding-top : 49px;
+    margin-top : 80px;
+}
+
+footer .main-footer {
+    display: flex;
+}
+
+.left-footer{
+    margin-right : 130px;
+}
+
+
+.left-footer .short-description {
+    color: rgba(206, 206, 206, 1);
+    max-width : 270px;
+    font-size : 14px;
+    line-height : 22px;
+    padding-top : 28px;
+}
+
+.keep-in-touch{
+    color : white ;
+    margin-top : 64px;
+}
+
+.keep-in-touch .title {
+    font-weight : bold;
+    font-size : 20px;
+    line-height  : 26px;
+}
+
+.keep-in-touch .social-media-links{
+    display: flex;
+    gap : 15px;
+    margin-top : 23px;
+}
+
+.keep-in-touch .social-media-links a{
+    border-radius : 3px;
+    background-color: rgba(55, 55, 55, 1);
+    width: 34px;
+    height : 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-in-touch .social-media-links .fb-link {
+    width : 10px;
+    height: 17px;
+}
+
+footer .mid-footer {
+    width : 300px;
+    margin-right : 109px;
+}
+
+.rp .title {
+    font-size :20px;
+    line-height : 26px;
+    font-weight : bold ;
+    color : white ;
+}
+
+.rp .rp-items {
+    display: flex;
+    flex-direction : column;
+    gap : 25px;
+    margin-top : 28px;
+}
+
+.rp-items .rp-item {
+    display: flex;
+    align-items: center;
+    gap : 20px;
+
+}
+
+.rp-item img {
+    width : 95px;
+    border-radius : 3px; 
+}
+
+.rp-item .rp-content .rp-description{
+    color : white ;
+    font-weight  : bold ;
+    line-height : 26px;
+    align-self : flex-start ;
+}
+
+.rp-item .rp-content .rp-date {
+    color:   rgba(206, 206, 206, 1);
+    font-style : italic ; 
+    font-size : 14px;
+    line-height : 14px;
+
+}
+
+.right-footer {
+    width : 270px;
+}
+
+.right-footer .newsletter-footer .title {
+    color : white ;
+    font-weight  : bold ;
+    line-height : 26px;
+} 
+
+.right-footer form {
+    width : 100%;
+    margin-top : 38px;
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+}
+
+.right-footer form input[type=text]{
+    padding : 15px;
+    border : none ; 
+    outline : none;
+    font-size : 14px;
+    line-height : 18px;
+    color : rgba(174, 179, 187, 1);
+    background-color: rgba(55, 55, 55, 1);
+    border-radius : 3px;
+}
+
+.copyright-content {
+    padding : 40px 0;
+}
+footer .copyright-container{
+    background-color: rgba(0, 0, 0, 1) ;
+}
+
+footer .copyright-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-content .copyright-text {
+    color: white;
+}
+
+
+
+
+
+
